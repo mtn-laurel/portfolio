@@ -1,0 +1,71 @@
+
+    /* HERO SECTION WITH BACKGROUND IMAGE */
+    .hero {
+      position: relative;
+      height: 100vh; /* full-screen height */
+      background: url('/src/assets/renders/room1.png') no-repeat center center/cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    /* DARK OVERLAY TO MAKE TEXT POP */
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.494); /* adjust for brightness */
+      z-index: 1;
+    }
+
+    /* TEXT LAYER */
+    .overlay {
+      position: relative;
+      z-index: 2;
+      color: #fff8d3;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0.2; transform: translateY(350px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    body {
+      font-family: "Bellefair", serif;
+      background-color: #111;
+      color: #f0f0f0;
+      text-align: center;
+      font-size: 1.6rem;
+    }
+    
+    /* FONT STYLES */
+    h1 {
+      font-size: 4rem;
+      font-weight: 50;
+      letter-spacing: 3px;
+      white-space: pre-wrap;
+      font-family: "Bellefair", serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    p {
+      font-size: 1.5rem;
+      font-family: "Bellefair", serif;
+      letter-spacing: 1.2px;
+    }
+
+    /* RESPONSIVE ADJUSTMENTS */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2.5rem;
+      }
+      p {
+        font-size: 1.2rem;
+      }
+    }
