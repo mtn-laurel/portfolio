@@ -17,7 +17,7 @@ export default function Nav() {
 
   return (
     <nav className={`main-nav flex justify-center space-x-6 p-4 ${scrolled ? "scrolled" : ""}`}>
-      <a href="#about" className="hover:text-purple-300">About</a>
+      <a href="#about" className="hover:text-purple-300">Home</a>
       <a href="#experience" className="hover:text-purple-300">Experience</a>
 
       {/* Gallery with hover dropdown */}

@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import Nav from "./components/Nav/Nav";
 import Hero from "./components/Hero/Hero";
-import About from "./components/About/About";
+import Home from "./components/Home/Home";
 import Background from "./components/Experience/Experience";
 import Gallery from "./components/Gallery/Gallery";
 import Footer from "./components/Footer/Footer";
@@ -21,7 +21,7 @@ function App() {
           element={
             <>
               <Hero />
-              <About />
+              <Home />
               <Background />
               <Footer />
             </>
