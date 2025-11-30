@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./Nav.css";
 
+
 export default function Nav() {
   const [scrolled, setScrolled] = useState(false);
 
@@ -12,7 +13,7 @@ export default function Nav() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const galleryItems = ["Dining Room", "Home", "York", "Cabin"];
+  const galleryItems = ["Dining Room", "Dubois", "York", "Cabin"];
 
   return (
     <nav className={`main-nav flex justify-center space-x-6 p-4 ${scrolled ? "scrolled" : ""}`}>
@@ -21,7 +22,8 @@ export default function Nav() {
 
       {/* Gallery with hover dropdown */}
       <div className="relative group">
-        <button className="hover:text-purple-300 px-4 py-2">Gallery</button>
+
+        <a href="#gallery" className="hover:text-purple-300 px-4 py-2">Gallery</a>
         <div className="absolute top-full left-0 mt-1 w-40 bg-gray-800 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
           {galleryItems.map((item, i) => (
             <Link

@@ -5,6 +5,11 @@ import About from "./components/About/About";
 import Background from "./components/Experience/Experience";
 import Gallery from "./components/Gallery/Gallery";
 import Footer from "./components/Footer/Footer";
+import DiningRoom from "./pages/DiningRoom";
+import York from "./pages/York";
+import Cabin from "./pages/Cabin";
+import Dubois from "./pages/Dubois";
+
 
 function App() {
   return (
@@ -23,6 +28,10 @@ function App() {
           }
         />
         <Route path="/gallery" element={<Gallery />} />
+        <Route path="/gallery/dining-room" element={<DiningRoom />} />
+        <Route path="/gallery/dubois" element={<Dubois />} />
+        <Route path="/gallery/york" element={<York />} />
+        <Route path="/gallery/cabin" element={<Cabin />} />
       </Routes>
     </>
   );
