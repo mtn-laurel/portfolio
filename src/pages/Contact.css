@@ -1,0 +1,21 @@
+.contact-page h2 {
+    padding-top: 1.5rem;
+}
+
+.links a{
+    text-decoration: none;
+    color: white;
+    letter-spacing: 0.1rem;
+    font-size: 2rem;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.links a:hover{
+    color: #fffffffc; /* optional: change text color on hover */
+  text-shadow: 
+    0 0 1px #aa80ab6c,
+    0 0 5px #aa80ab6c,
+    0 0 6px #aa80ab6c,
+    0 0 16px #d2667c;
+}

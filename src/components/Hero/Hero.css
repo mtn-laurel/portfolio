@@ -26,7 +26,7 @@
     .overlay {
       position: relative;
       z-index: 2;
-      color: #fff8d3;
+      color: #ffffff;
       animation: fadeIn 1.5s ease-in-out;
     }
 

@@ -1,17 +1,30 @@
-.gallery-page {
+.gallery-section {
   padding: 2rem;
   text-align: center;
 }
 
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1.5rem;
+.art-item a{
+  color: #f0f0f0;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-family: "Bellefair", serif;
+  transition: color 0.3s ease;
+  background: none;
+  cursor: pointer;
+  font-size: 1.7rem;
+  padding: 0.9rem;
 }
 
-.gallery-img {
-  max-width: 300px;
-  border-radius: 10px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+.art-item a:hover{
+    color: #fffffffc; /* optional: change text color on hover */
+  text-shadow: 
+    0 0 1px #aa80ab6c,
+    0 0 5px #aa80ab6c,
+    0 0 6px #aa80ab6c,
+    0 0 16px #d2667c;
+}
+
+h2 {
+  font-size: 2rem;
 }

@@ -9,12 +9,8 @@ export default function Dubois() {
         <div className="art-item">
           <img src={Dubois1} alt="Door 1" className="pics" />
         </div>
-        <div className="art-item">
-          <img src={Dubois1} alt="Door 2" className="pics" />
-        </div>
-        <div className="art-item">
-          <img src={Dubois1} alt="Door 3" className="pics" />
-        </div>
+        <p>More pictures coming soon...</p>
+        
       </div>
     </section>
   );

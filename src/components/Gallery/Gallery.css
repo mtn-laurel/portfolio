@@ -1,40 +1,48 @@
-.gallery {
-    font-family: "Bellefair", serif;;
+.gallery-section {
+  text-align: center;
+  padding: 2rem;
+  font-family: "Bellefair", serif;
 }
 
 .art {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap; /* allows images to wrap on smaller screens */
-    gap: 10px;       /* space between images */
-   
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.art-item {
+  display: flex;
+  flex-direction: column; /* stacks title above image */
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease; /* smooth hover */
 }
 
 .pics {
     border-radius: 10px;
-    box-shadow: 0 4px 100px rgba(83, 20, 85, 0.336);
-    width: 70%;
-    height: auto;
+  width: 400px;
+  height: auto;
+  box-shadow: 0 4px 10px rgba(83, 20, 85, 0.3);
+  transition: all 0.3s ease;
 }
 
-.art-item {
-    display: flex;
-    flex-direction: column; /* stacks text above image */
-    align-items: center;
-}
-
-.label {
+.project-title {
+  margin: 1rem 0;
+  font-size: 1.5rem;
+  font-weight: bold;
   color: #f0f0f0;
   text-decoration: none;
-  margin: 1.5rem;
-  font-weight: bold;
-  font-size: 1.5rem;
-  letter-spacing: 1px;
-  transition: text-shadow 0.3s ease, color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
-.label:hover {
-  color: #fffffffc; /* optional: change text color on hover */
+/* Hover effect applied to the container */
+.art-item:hover .pics {
+  transform: scale(1.05); /* subtle pop effect */
+}
+
+.art-item:hover .project-title {
+    color: #fffffffc;
   text-shadow: 
     0 0 1px #aa80ab6c,
     0 0 5px #aa80ab6c,
