@@ -1,0 +1,26 @@
+.contact-section p {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+
+.contact-section a {
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-family: "Bellefair", serif;
+  transition: color 0.3s ease;
+  background: none;
+  cursor: pointer;
+  font-size: 1.7rem;
+  padding: 0.7rem;
+  color: white;
+}
+
+.contact-section a:hover {
+  color: #fffffffc;
+  text-shadow: 
+    0 0 1px #aa80ab6c,
+    0 0 5px #aa80ab6c,
+    0 0 6px #aa80ab6c,
+    0 0 16px #d2667c;
+}
