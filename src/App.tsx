@@ -2,7 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import Nav from "./components/Nav/Nav";
 import Hero from "./components/Hero/Hero";
 import ExperiencePage from "./pages/ExperiencePage";
-import Contact from "./pages/contact";
+import Contact from "./pages/Contact";
 import GalleryPage from "./pages/GalleryPage";
 import Footer from "./components/Footer/Footer";
 
