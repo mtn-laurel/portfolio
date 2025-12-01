@@ -10,12 +10,12 @@
   gap: 5rem;
   padding: 8px;
   border-bottom: 2px solid #00000027;
-  box-shadow: 0 19px 40px 10px rgba(0, 0, 0, 0.567);
+  box-shadow: 0 19px 40px 10px rgb(0, 0, 0);
 }
 
 .main-nav a,
 .main-nav button {
-  color: #f0f0f0;
+  color: #ffffff;
   font-weight: bold;
   text-decoration: none;
   letter-spacing: 2px;
@@ -29,7 +29,7 @@
 
 .main-nav a:hover,
 .main-nav button:hover {
-  color: #fffffffc; /* optional: change text color on hover */
+  color: #fffffffc;
   text-shadow: 
     0 0 1px #aa80ab6c,
     0 0 5px #aa80ab6c,
@@ -53,10 +53,9 @@
   border-radius: 18px;
 }
 
-/* Dropdown menu hidden by default */
 .group > div {
   position: absolute;
-  top: 100%; /* just below the button */
+  top: 100%; 
   left: 50%;
   width: 180px;
   background-color: #070107;
@@ -68,11 +67,10 @@
   border-radius: 18px;
 }
 
-/* Show dropdown on hover */
 .group:hover > div {
   opacity: 1;
   visibility: visible;
-  color: #fffffffc; /* optional: change text color on hover */
+  color: #fffffffc; 
   text-shadow: 
     0 0 1px #aa80ab6c,
     0 0 5px #aa80ab6c,
@@ -89,19 +87,17 @@
   text-decoration: none;
   transition: background 0.25s ease;
 }
-/* Rounded corners for the first item (Dining Room) */
+
 .group > div a:first-child {
   border-top-left-radius: 18px;
   border-top-right-radius: 18px;
 }
 
-/* Rounded corners for the last item (Cabin) */
 .group > div a:last-child {
   border-bottom-left-radius: 18px;
   border-bottom-right-radius: 18px;
 }
 
-/* Hover effect for all items */
 .group > div a:hover {
   background-color: #c75ac745;
   color: #ffffff;
