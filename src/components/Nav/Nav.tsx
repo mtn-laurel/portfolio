@@ -35,8 +35,6 @@ export default function Nav() {
           ))}
         </div>
       </div>
-
-      <Link to="/contact" className="hover:text-purple-300">Contact</Link>
     </nav>
   );
 }
