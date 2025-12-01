@@ -20,7 +20,7 @@
 }
 
 .pics {
-    border-radius: 10px;
+  border-radius: 10px;
   width: 400px;
   height: auto;
   box-shadow: 0 4px 10px rgba(83, 20, 85, 0.3);
@@ -36,9 +36,8 @@
   transition: all 0.3s ease;
 }
 
-/* Hover effect applied to the container */
 .art-item:hover .pics {
-  transform: scale(1.05); /* subtle pop effect */
+  transform: scale(1.05); 
 }
 
 .art-item:hover .project-title {

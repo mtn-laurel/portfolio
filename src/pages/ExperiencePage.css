@@ -1,12 +1,12 @@
 .experience-page {
-  padding-top: 2rem;
+  padding-top: 4rem;
 }
 .experience-page h2 {
     font-size: 1.8rem;
     letter-spacing: 0.1rem;
     font-weight: 700;
     border-top: 2px solid rgba(255, 255, 255, 0.164);
-    padding-top: 1rem;
+    padding-top: 1.3rem;
 }
 
 .school {
@@ -36,6 +36,12 @@
     font-size: 1.3rem;
 }
 
+.projects .project-link {
+  overflow: visible; 
+  position: relative;
+  display: inline-block;
+}
+
 .projects h3 {
     letter-spacing: 0.1rem;
     font-weight: 100;
@@ -60,7 +66,7 @@
     font-size: 1.7rem;
 }
 
-/* .projects a:hover {
+ .projects a:hover {
     color: #fffffffc; 
   text-shadow: 
     0 0 1px #aa80ab6c,
@@ -68,7 +74,7 @@
     0 0 6px #aa80ab6c,
     0 0 16px #d2667c;
     transform: translateY(-2px);
-}*/
+}
 
 .project-details {
   list-style-type: disc; 
@@ -84,6 +90,7 @@
 .project-details li {
   margin-bottom: 0.01rem;
   letter-spacing: 0.05rem;
+ 
 }
 
 .project-details li::marker {
@@ -97,12 +104,14 @@
   text-decoration: none;
   letter-spacing: 2px;
   font-family: "Bellefair", serif;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;   
+  display: inline-block;
   cursor: pointer;
   transition: all 0.3s ease;
   font-size: 1.7rem; 
+}
+
+.project-link .project-icon {
+  margin-left: 0.5rem; 
 }
 
 .project-link:hover,
@@ -116,7 +125,6 @@
   transform: translateY(-2px);
 }
 
-/* Hover effect including icon */
 .project-link:hover {
   color: #fffffffc;
   text-shadow: 
@@ -171,10 +179,20 @@
 }
 
 .links {
-    margin-top: 2rem;
-    padding-bottom: 4rem;
-    
+  display: flex;
+  justify-content: center;  
+  align-items: center;      
+  gap: 1rem; 
+  padding-bottom: 1rem;     
 }
+
+.divider {
+  width: 1px;
+  height: 20px;
+  background-color: #aaa;
+  opacity: 0.6;
+}
+
 .links a{
     color: #f0f0f0;
     font-weight: bold;
