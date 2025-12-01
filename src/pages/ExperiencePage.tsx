@@ -1,7 +1,7 @@
 import "./ExperiencePage.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUpRightFromSquare, faFile } from '@fortawesome/free-solid-svg-icons';
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 import godotIcon from "../assets/icons/godot.png";
 import jiraIcon from "../assets/icons/jira.png";
