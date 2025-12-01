@@ -15,7 +15,16 @@ import cIcon from "../assets/icons/csharp.png";
 export default function ExperiencePage() {
   return (
     <section className="experience-page">
-    
+      <div className="links">
+        <a href="https://github.com/mtn-laurel" target="_blank">
+          <FontAwesomeIcon icon={faGithub} /> Github
+        </a> 
+        <span className="divider"></span>
+        <a href="/portfolio/Emery-L-Jones.pdf" target="_blank">
+          <FontAwesomeIcon icon={faFile}/>Resume</a>
+        {/* <a href="https://www.linkedin.com/" target="_blank"> LinkedIn</a> */}
+      </div>
+      
       <h2><strong>Education</strong></h2>
       <div className="school">
         <h3>Louisiana State University — Baton Rouge, LA</h3>
@@ -80,15 +89,6 @@ export default function ExperiencePage() {
             <FontAwesomeIcon icon={faGithub} className="git-icon"/>
           {/* <a href="https://www.linkedin.com/" target="_blank"> LinkedIn</a> */}
         </div>
-      </div>
-
-      <div className="links">
-        <a href="https://github.com/mtn-laurel" target="_blank">
-          <FontAwesomeIcon icon={faGithub} /> Github
-        </a>
-        <a href="/portfolio/Emery-L-Jones.pdf" target="_blank">
-          <FontAwesomeIcon icon={faFile}/>Resume</a>
-        {/* <a href="https://www.linkedin.com/" target="_blank"> LinkedIn</a> */}
       </div>
     </section>
   );
