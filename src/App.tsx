@@ -10,6 +10,7 @@ import DiningRoom from "./pages/DiningRoom";
 import York from "./pages/York";
 import Cabin from "./pages/Cabin";
 import Dubois from "./pages/Dubois";
+import HueParadox from "./pages/HueParadox";
 
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
         <Route path="/gallery/dubois" element={<Dubois />} />
         <Route path="/gallery/york" element={<York />} />
         <Route path="/gallery/cabin" element={<Cabin />} />
+        <Route path="/gallery/hue" element={<HueParadox/>} />
 
         <Route path="/contact" element={<Contact />} />
       </Routes>

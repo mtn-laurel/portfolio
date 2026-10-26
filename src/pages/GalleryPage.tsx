@@ -4,6 +4,7 @@ import Pic2 from "../assets/renders/backdoor.png";
 import Pic3 from "../assets/renders/york1.png";
 import Pic4 from "../assets/renders/room2.png";
 import blenderIcon from "../assets/icons/blender.png";
+import Pic5 from "../assets/renders/hue3.png";
 
 import "../pages/GalleryPage.css";
 
@@ -13,6 +14,7 @@ export default function GalleryPage() {
     { src: Pic2, alt: "Dubois", link: "/gallery/dubois" },
     { src: Pic4, alt: "Cabin", link: "/gallery/cabin" },
     { src: Pic3, alt: "York", link: "/gallery/york" },
+    { src: Pic5, alt: "Hue Paradox", link: "/gallery/hue-ßparadox"},
   ];
 
   return (

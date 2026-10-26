@@ -4,6 +4,7 @@ import Lightbox from "yet-another-react-lightbox";
 
 import Pic1 from "../assets/renders/york1.png";
 import Pic2 from "../assets/renders/york2.png";
+import Pic3 from "../assets/renders/york-pic.png";
 
 import "../pages/York.css";
 
@@ -12,6 +13,7 @@ export default function York() {
   const [index, setIndex] = useState(0);
 
   const images = [
+    {src: Pic3},
     {src: Pic1},
     {src: Pic2},
   ];
