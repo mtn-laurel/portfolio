@@ -17,12 +17,12 @@ export default function HueParadox() {
   const [open, setOpen] = useState(false);
   const [index, setIndex] = useState(0);
 
-  const images = [{ src: Hue1}, 
-                  {src: Hue2}, 
-                  { src: Hue3}, 
-                  {src: Hue4}, 
-                  {src: Hue5}, 
-                  {src: Hue6} 
+  const images = [{ src: Hue1 }, 
+                  { src: Hue2 }, 
+                  { src: Hue3 }, 
+                  { src: Hue4 }, 
+                  { src: Hue5 }, 
+                  { src: Hue6 } 
   ];
 
   return (

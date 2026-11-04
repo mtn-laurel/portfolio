@@ -13,7 +13,7 @@ export default function Nav() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const galleryItems = ["Dining Room", "Dubois", "York", "Cabin"];
+  const galleryItems = ["Dining Room", "Dubois", "York", "Cabin", "Hue Paradox"];
 
   return (
     <nav className={`main-nav flex justify-center space-x-6 p-4 ${scrolled ? "scrolled" : ""}`}>
