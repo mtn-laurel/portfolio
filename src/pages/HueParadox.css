@@ -1,0 +1,42 @@
+.gallery-section {
+    font-family: "Bellefair", serif;;
+}
+
+.art {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* allows images to wrap on smaller screens */
+    gap: 10px;       /* space between images */
+}
+
+.pics {
+    border-radius: 10px;
+    box-shadow: 0 4px 100px rgba(83, 20, 85, 0.336);
+    width: 70%;
+    height: auto;
+}
+
+.art-item {
+    display: flex;
+    flex-direction: column; /* stacks text above image */
+    align-items: center;
+}
+
+.label {
+  color: #f0f0f0;
+  text-decoration: none;
+  margin: 1.5rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  transition: text-shadow 0.3s ease, color 0.3s ease;
+}
+
+.label:hover {
+  color: #fffffffc; /* optional: change text color on hover */
+  text-shadow: 
+    0 0 1px #aa80ab6c,
+    0 0 5px #aa80ab6c,
+    0 0 6px #aa80ab6c,
+    0 0 16px #d2667c;
+}
