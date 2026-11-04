@@ -18,10 +18,10 @@ export default function GalleryPage() {
   ];
 
   return (
-    <section className="gallery-section">
+    <section className="gallery-section project-gallery">
       <h2>Project Gallery</h2>
-      <div className="blender">Created with
-      <img src={blenderIcon} alt="Blender" className="blender-icon"/>
+      <div className="blender">Created with Blender
+      {/* <img src={blenderIcon} alt="Blender" className="blender-icon"/> */}
       </div>
       <div className="art">
         {images.map((img, i) => (
