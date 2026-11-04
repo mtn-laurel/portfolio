@@ -14,7 +14,7 @@ export default function GalleryPage() {
     { src: Pic2, alt: "Dubois", link: "/gallery/dubois" },
     { src: Pic4, alt: "Cabin", link: "/gallery/cabin" },
     { src: Pic3, alt: "York", link: "/gallery/york" },
-    { src: Pic5, alt: "Hue Paradox", link: "/gallery/hue-ßparadox"},
+    { src: Pic5, alt: "Hue Paradox", link: "/gallery/hue-paradox"},
   ];
 
   return (
