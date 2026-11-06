@@ -162,5 +162,8 @@ h2 {
   width: 100px;
   height: auto;
   transform: translateY(8px);
+}
 
+.blender {
+  padding-bottom: 1rem;
 }
