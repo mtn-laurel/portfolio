@@ -26,7 +26,7 @@ export default function ExperiencePage() {
           <FontAwesomeIcon icon={faGithub} /> Github
         </a> 
         <span className="divider"></span>
-        <a href="/portfolio/Emery-L-Jones.pdf" target="_blank">
+        <a href="/portfolio/Emery_Jones_resume.pdf" target="_blank">
           <FontAwesomeIcon icon={faFile}/>Resume</a>
         {/* <a href="https://www.linkedin.com/" target="_blank"> LinkedIn</a> */}
       </div>
