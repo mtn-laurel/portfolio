@@ -1,35 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap");
+
 .experience-page {
   padding-top: 4rem;
 }
 .experience-page h2 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     letter-spacing: 0.1rem;
     font-weight: 700;
     border-top: 2px solid rgba(255, 255, 255, 0.164);
     padding-top: 1.3rem;
 }
 
+.project-divider-line, .school-divider-line {
+    border-top: 2px solid rgba(255, 255, 255, 0.164);
+    margin-left: 0;
+    margin-right: 0;
+}
+
 .school {
     margin-bottom: 2rem;
 }
 
+.school-divider-line {
+  padding-top: 0rem;
+}
+
+.project-divider-line {
+  padding-top: 1.0rem;
+}
+
+.school, .projects {
+  max-width: 900px;
+  margin: 0 auto 2rem;
+  text-align: center;
+}
+
 .school h2 {
-    font-size: 1.8rem;
     letter-spacing: 0.1rem;
     font-weight: bolder;
+    font-size: 2rem;
 }
 
 .school h3 {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     letter-spacing: 0.1rem;
     font-weight: 500;
 }
 
 .school h4 {
+    color: #bbb;
     font-size: 1.2rem;
     letter-spacing: 0.1rem;
     font-weight: 100;
-    font-style: italic;
 }
 
 .school p {
@@ -37,9 +59,9 @@
 }
 
 .projects .project-link {
-  overflow: visible; 
-  position: relative;
-  display: inline-block;
+    overflow: visible; 
+    position: relative;
+    display: inline-block;
 }
 
 .projects h3 {
@@ -49,7 +71,7 @@
 }
 
 .projects h2 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     letter-spacing: 0.1rem;
     font-weight: bolder;
 }
@@ -76,35 +98,37 @@
     transform: translateY(-2px);
 }
 
-.project-details {
-  list-style-type: disc; 
-  list-style-position: inside;
-  margin-left: 1rem;    
-  margin-top: 0.5rem 0;
-  margin-bottom: 0.01rem;
+.project-description {
+  color: #d0d0d0;
+  font-weight: 400;
+  margin: 0.5rem 0 1rem;
+  text-align: left;
+}
+
+.project-bullets {
+  list-style-type: disc;
+  list-style-position: outside;   /* bullet sits in the margin, text wraps cleanly */
+  text-align: left;
+  margin: 0 0 1.5rem;
+  padding-left: 1.5rem;           /* room for the bullet */
+  max-width: none;               /* controls how wide the text runs before wrapping */
   font-size: 1.3rem;
   line-height: 1.6;
   color: #f0f0f0;
 }
 
-.project-details li {
-  margin-bottom: 0.01rem;
+.project-bullets li {
+  margin-bottom: 0.3rem;
   letter-spacing: 0.05rem;
- 
+  padding-left: 0.3rem;
 }
 
-.project-details li::marker {
+.project-bullets li::marker {
   color: #ffffff;
   font-size: 1.2rem;
 }
 
 .project-link {
-  color: #f0f0f0;
-  font-weight: bolder;
-  text-decoration: none;
-  letter-spacing: 2px;
-  font-family: "Bellefair", serif;
-  display: inline-block;
   cursor: pointer;
   transition: all 0.3s ease;
   font-size: 1.7rem; 
@@ -151,7 +175,7 @@
     justify-content: center;
     gap: 1rem;
     margin-top: 1rem;
-    padding-bottom: 0.5rem;
+    padding-bottom: 0rem;
 }
 
 .godot-icon {
@@ -297,3 +321,121 @@
 .stack p {
   font-size: 1.2rem;
 }
+
+
+
+
+
+/* Add the font in your index.html <head> or via @import:
+   https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap */
+
+.experience-page {
+  --text: #ece8e6;
+  --muted: #a39ea2;
+  --line: rgba(255, 255, 255, 0.14);
+  --accent: #d2667c;
+  --body-font: "DM Sans", sans-serif;
+}
+
+.school, .projects {
+  max-width: 760px;
+  margin: 0 auto 2.5rem;
+  text-align: left;
+}
+
+/* Section headings stay centered */
+.experience-page h2 {
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: 0.12rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Titles: Bellefair at its real weight */
+.school h3,
+.projects .project-link {
+  font-weight: 400;
+  letter-spacing: 0.05rem;
+}
+
+.project-link { display: block; width: fit-content; }
+
+/* Dates, school details */
+.school h4 {
+  color: var(--accent);
+  font-family: var(--body-font);
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.03rem;
+  margin: 0.25rem 0 1rem;
+}
+
+/* Body text */
+.project-description,
+.project-bullets,
+.stack p,
+.school p {
+  font-family: var(--body-font);
+  letter-spacing: 0;
+}
+
+.project-description {
+  color: var(--muted);
+  font-size: 1.05rem;
+  font-weight: 400;
+  line-height: 1.7;
+  margin: 0.5rem 0 1rem;
+}
+
+.project-bullets {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--text);
+  padding-left: 1.25rem;
+  margin: 0 0 1.25rem;
+}
+
+.project-bullets li { margin-bottom: 0.4rem; padding-left: 0.2rem; letter-spacing: 0; }
+.project-bullets li::marker { color: var(--accent); font-size: 1rem; }
+
+.stack p { font-size: 0.95rem; color: var(--muted); margin: 0; }
+.stack strong { color: var(--text); font-weight: 500; }
+
+/* Dividers: faint fade instead of a hard line */
+.project-divider-line,
+.school-divider-line {
+  height: 1px;
+  border: 0;
+  padding: 0;
+  background: linear-gradient(90deg, var(--line), transparent);
+  margin: 2.5rem 0 1.75rem;
+}
+.school-divider-line { margin: 1.5rem 0; }
+
+/* Icons: one height, muted, color on hover */
+.apps {
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin: 1rem 0 0;
+}
+
+.apps img {
+  height: 26px;
+  width: auto;
+  padding: 0;
+  filter: grayscale(1) brightness(1.3);
+  opacity: 0.65;
+  transition: opacity 0.3s ease, filter 0.3s ease;
+}
+
+.apps .git-icon {
+  height: 26px;
+  width: auto;
+  padding: 0;
+  opacity: 0.65;
+  transition: opacity 0.3s ease;
+}
+
+.apps img:hover { filter: none; opacity: 1; }
+.apps .git-icon:hover { opacity: 1; }

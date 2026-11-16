@@ -29,7 +29,7 @@ export default function Hero() {
         <header className="hero">
             <div className="overlay">
                 <h1 ref={streamingRef}></h1>
-                <p>Front End Developer & Digital Artist</p>
+                <p>Design & 3D Digital Artist</p>
             </div>
         </header>
     );

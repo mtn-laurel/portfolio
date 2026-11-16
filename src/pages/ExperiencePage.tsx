@@ -32,36 +32,44 @@ export default function ExperiencePage() {
       </div>
 
 
-      {/* ----------------- EDUCATION ------------------*/}
+      {/* ------------------------------ EDUCATION -----------------------------*/}
       <h2><strong>Education</strong></h2>
+      <div className="school-divider-line"></div>
       <div className="school">
-        <h3>Louisiana State University — Baton Rouge, LA</h3>
-        <p>B.S. Computer Science (Minor in Digital Media, Art, & Technology)</p>
-        <h4>Graduated Cum Laude August 2026</h4>
+        <h3>Louisiana State University | Baton Rouge, LA</h3>
+        <p>B.S. Computer Science | Minor in Digital Media, Art, & Technology</p>
+        <h4>Graduated August 2026 | GPA 3.72, Cum Laude</h4>
       </div>
       <div className="school">
-        <h3>Baton Rouge Community College — Baton Rouge, LA</h3>
+        <div className="school-divider-line"></div>
+        <h3>Baton Rouge Community College | Baton Rouge, LA</h3>
         <h4>Fall 2023 - Fall 2024</h4>
       </div>
       <div className="school">
 
-      {/* ---------------- RELATED EXPERIENCE -----------------*/}
+      {/* ----------------------------- RELATED EXPERIENCE --------------------------*/}
+
         <h2><strong>Related Experience</strong></h2>
 
         {/* ------------ LAB WORK --------------*/}
-        <h3>Research Assistant in the Aging, Cognition, and Technology (ACT) Lab at Louisiana State University — Baton Rouge, LA</h3>
+        <div className="project-divider-line"></div>
+        <h3>Research Assistant</h3>
+        <h4>Aging, Cognition, and Technology (ACT) Lab</h4>
+        <h4>Louisiana State University | Baton Rouge, LA</h4>
         <h4>Summer 2026</h4>
-        <ul className="project-details">
+        <ul className="project-bullets">
           <li>Recruited and interviewed older adults in Louisiana for a study on developing an AI-powered career tool</li>
           <li>Thematically analyzed data using qualitative research procedures and co-created a codebook</li>
-          <li>Peer author on the published paper</li>
+          <li>Peer author paper in progress</li>
         </ul>
 
 
         {/* ------------ JUNUM --------------*/}
-        <h3>Software Engineer Intern at Junum.io — New Orleans, LA</h3>
+        <div className="project-divider-line"></div>
+        <h3>Software Engineer Intern</h3>
+        <h4>Junum.io | New Orleans, LA</h4>
         <h4>Summer 2025</h4>
-        <ul className="project-details">
+        <ul className="project-bullets">
           <li>Collaborated with team using Agile Scrum framework, participated in stand-ups</li>
           <li>Implemented UI/functional testing using Cypress for patients' assessment form</li>
           <li>Completed Jira tickets</li>
@@ -69,29 +77,29 @@ export default function ExperiencePage() {
 
       </div>
 
+
+    {/* -------------------------------- PROJECTS --------------------------------*/}
       <div className="projects">
         <h2>Projects</h2>
 
         {/* ------------------ HUE PARADOX ------------------ */}
-
+        <div className="project-divider-line"></div>
         <a href="https://github.com/mtn-laurel/Circle" target="_blank" className="project-link">
-        Hue Paradox
+        Hue Paradox (2026)
         <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="project-icon" />
         </a>
         <div className="project-description">
-          <p>Description:</p>
           <p>Interdisciplinary group project course, combining art and electrical engineering students. Our group of 6 created an interactive and immersive virtual reality experience with Meta's Oculus that allows users to explore how colors, specifically red and blue, influence risk-taking behaviors. </p>
         </div>
-        <ul className="project-details">
-          <li>Assisted in researching for the experience.
-          </li>
+        <ul className="project-bullets">
+          <li>Assisted in researching for the experience.</li>
           <li>Created all 3D assets and room designs in Blender</li>
           <li>Created all lighting and textures through out the environment</li>
           <li>Integrated sound effects, background music, and assests into Unity</li>
           <li>Collaborated with the research team to ensure room and assets would convey the theme and research direction</li>
         </ul>
         <div className="stack">
-          <p>Tools & Languages: Blender, Unity, Meta Oculus VR goggles</p>
+          <p><strong>Tools & Languages:</strong> Blender, Unity, Meta Oculus VR goggles</p>
         </div>
         <div className="apps">
             <img src={blenderIcon} alt="Blender Application Logo" className="blender-icon" />
@@ -102,15 +110,15 @@ export default function ExperiencePage() {
 
         {/* ------------------ THE CIRCLE ------------------ */}
 
+        <div className="project-divider-line"></div>
         <a href="https://github.com/mtn-laurel/Circle" target="_blank" className="project-link">
-        The Circle
+        The Circle (2026)
         <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="project-icon" />
         </a>
         <div className="project-description">
-          <p>Description:</p>
           <p>A four person group project for our Human-Computer Interaction course where designed a social media application that mimics another popular application, but the target demographic is older adults.</p>
         </div>
-        <ul className="project-details">
+        <ul className="project-bullets">
           <li>Managed the group project, dividing tasks and facilitating meetings
           </li>
           <li>Conducted user studies to understand the barriers and pain points older adults face when navigating social media applications</li>
@@ -118,7 +126,7 @@ export default function ExperiencePage() {
           <li>Designed the wireframe and implemented it</li>
         </ul>
         <div className="stack">
-          <p>Tools & Languages: Jira, GitHub, Figma, JavaScript</p>
+          <p><strong>Tools & Languages:</strong> Jira, GitHub, Figma, JavaScript</p>
         </div>
         <div className="apps">
             <img src={jiraIcon} alt="Jira" className="jira-icon" />
@@ -129,20 +137,22 @@ export default function ExperiencePage() {
         </div>
 
         {/* ------------------ LUNAR LANDER LAIKA ------------------ */}
+
+        <div className="project-divider-line"></div>
         <a href="https://github.com/mtn-laurel/LLL" target="_blank" className="project-link">
         Lunar Lander Laika
         <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="project-icon" />
         </a>
         <div className="project-description">
-          <p>Description:</p>
+          <p>Describe</p>
         </div>
-        <ul className="project-details"> 
+        <ul className="project-bullets"> 
           <li>Led a 5-member team, facilitating Agile Scrum ceremonies and spring planning</li>
           <li>Implemented UI components and gameplay mechanics in Godot</li>
           <li>Managed Git repository workflow and version control, including pull requests, branch protection, and merges</li>
         </ul>
         <div className="stack">
-          <p>Tools & Languages: Jira, GDScript, C#, Godot, GitHub</p>
+          <p><strong>Tools & Languages:</strong> Jira, GDScript, C#, Godot, GitHub</p>
         </div>
         <div className="apps">
             <img src={jiraIcon} alt="Jira" className="jira-icon" />
@@ -154,17 +164,22 @@ export default function ExperiencePage() {
 
 
         {/* ------------------ PHISH PATROL ------------------ */}
+
+        <div className="project-divider-line"></div>
         <a href="https://github.com/JH676592/PhishPatrol" target="_blank" className="project-link">
         Phish Patrol
         <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="project-icon" />
         </a>
-        <ul className="project-details">
+        <div className="project-description">
+          <p>Describe</p>
+        </div>
+        <ul className="project-bullets">
           <li>Used Figma to create prototypes</li>
           <li>Designed and implemented UI</li>
           <li>Participated in and followed the Agile Scrum framework</li>
         </ul>
          <div className="stack">
-          <p>Tools & Languages: Figma, Svelte, Java (Spring Boot), TypeScript, GithHub </p>
+          <p><strong>Tools & Languages:</strong> Figma, Svelte, Java (Spring Boot), TypeScript, GithHub </p>
         </div>
         <div className="apps">
             <img src={figmaIcon} alt="figma" className="figma-icon" />
